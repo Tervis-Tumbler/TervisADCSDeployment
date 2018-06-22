@@ -12,4 +12,7 @@ function Invoke-TervisCAProvision {
     Install-AdcsOnlineResponder -force
     #NDES wants a separate servcie account when run on the same system as the root CA, not needed now so will work on this later
     #Install-AdcsNetworkDeviceEnrollmentService -ApplicationPoolIdentity -Force
+
+    Install-Module -Name ADCSTemplate
+    #https://github.com/GoateePFE/ADCSTemplate
 }
